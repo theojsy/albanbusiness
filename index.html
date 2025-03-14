@@ -8,6 +8,8 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <body>
 
@@ -15,29 +17,43 @@
 
     <nav>
         <div class="logo">
-            Mr Paella
+            <img height=40px src="images/paellalogo.svg">
+            <h1>Mr Paella</h1>
         </div>
 
-        <ul>
+        <ul class="menu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Prestation</a></li>
             <li><a href="#">À propos</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="#">
+                <button>
+                    <div class="book">
+                        Réserver
+                    </div>
+                </button>
+            </a></li>
         </ul>
 
-        <button>
-            <div class="book">
-                Réserver
-            </div>
-        </button>
+        
 
         <div class="menu-hamburger">
-            <i class="ri-menu-line"></i>
+            <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
 
+    <script>
+        const burgerMenuButton = document.querySelector('.menu-hamburger')
+        const burgerMenuButtonIcon = document.querySelector('.menu-hamburger i')
+        const burgerMenu = document.querySelector('.menu')
 
+        burgerMenuButton.onclick = function(){
+            burgerMenu.classList.toggle('open')
+            const isOpen = burgerMenu.classList.contains('open')
+            burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script>
     
 </body>
 </html>
