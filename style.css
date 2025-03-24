@@ -12,7 +12,7 @@ body{
     font-family: "Poppins", sans-serif;
     margin: auto;
     font-size: 16px;
-    background-color: #f8f8ec;
+    background-color: #f3a318;
     
 }
 
@@ -131,6 +131,7 @@ header h1{
 
 .prestation{
     text-align: center;
+    padding: 0 2rem;
 }
 
 .margin-h1{
@@ -142,11 +143,12 @@ header h1{
 
 .about{
     text-align: center;
+    padding: 0 2rem;
 }
 
 .booking-form{
     margin: 0 auto;
-    background-color: rgba(251, 169, 54, 0.7);
+    background-color: rgba(249, 182, 90, 0.7);
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
@@ -161,6 +163,7 @@ header h1{
 .booking-form form{
     display: flex;
     flex-direction: column;
+    
 }
 
 .booking-form input{
@@ -245,7 +248,7 @@ header h1{
 
 @media (max-width:850px){
     nav a {
-        /* display:none */
+        width: 100%;
         
     }
 
@@ -256,8 +259,7 @@ header h1{
         margin: auto;
         padding: 1rem;
         position: absolute;
-        right: -100%;
-        top: 90px;
+        transform: translateY(-100%);
         transition: 0.5s ease;
         background-color: #fff;
         
@@ -265,7 +267,9 @@ header h1{
     }
 
     nav ul.open{
-        right: 0;
+        /* right: 0; */
+        transform: translateY(0);
+        top: 80px;
     }
 
     button{
