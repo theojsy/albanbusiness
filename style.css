@@ -1,315 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --primary-color:rgb(233, 167, 44);
+    --primary-color-dark:rgb(192, 126, 4);
+    --text-dark:#15191d;
+    --text-light:#737373;
+    --extra-light:#e5e5e5;
+    --white:#ffffff;
+    --max-width: 1200px;
+    --header-font: "Poppins", sans-serif;
+}
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    
 }
 
-body{
-    max-width: 1200px;
-    font-family: "Poppins", sans-serif;
+.section__container{
+    max-width: var(--max-width);
     margin: auto;
-    font-size: 16px;
-    background-color: #f3a318;
-    
+    padding: 5rem 1rem;
 }
 
+.section__header{
+    font-size: 3.25rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    letter-spacing: -5px;
+    line-height: 4.25rem;
+}
 
-
-.noborder{
-    border-radius: 0;
-    box-shadow: none;
+.btn{
+    padding: 1rem 1.5rem;
+    outline: none;
     border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--text-dark);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-img{
-    border-radius: 8px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
-    border: solid 3px #fff;
+.btn:hover{
+    color:var(--text-dark);
+    background-color: var(--primary-color);
 }
 
-
-
-
-nav {
+img {
+    display: flex;
     width: 100%;
-    height: 90px;
-    background-color: #f0f08d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    color: orange;
-    
-    
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    
-    
-}
-
-
-
-
-
-
-
-.logo {
-    display: flex;
-    flex-direction: column;
-}
-
-nav a{
+a {
     text-decoration: none;
-    color: orange
+    transition: 0.3s;
 }
 
-nav a:hover{
-    color: black;
-    cursor: pointer;
-    border-bottom: 2px solid black;
-    
+ul {
+    list-style: none;
 }
 
-button{
-    padding: 5px 10px;
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background:none;
-    color: orange;
-    border-radius: 5px;
-}
-
-button:hover{
-    background-color: orange;
-    color: #fff;
-    cursor: pointer;
-    transform: scale(1.07);
-}
-
-.form-button{
-    background-color: orange;
-    color: #fff;
-    cursor: pointer;
-    padding: 5px 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-
-.info button{
-    margin-top: 1rem;
-    background-color: #fff;
-
-}
-
-.info button:hover{
-    color: #f3a318;
-}
-
-
-
-.menu-hamburger{
-    display: none;
 }
 
 header{
-    padding: 0 2rem;
-    text-align: center;
-    
+    position:relative;
+    background-image: url(images/bgpaella.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
-
-header h1{
-    margin-top: 1rem;
-    margin-bottom: 0.7rem;
-    
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
 }
 
-.text{
-    margin-bottom: 1rem;
-    margin-top: 5px;
-    
-}
-
-.carte-3{
-    margin-top: 1rem;
-}
-
-.prestation{
-    text-align: center;
-    padding: 0 2rem;
-}
-
-.margin-h1{
-    margin-top: 1rem;
-    
-}
-
-
-
-.about{
-    text-align: center;
-    padding: 0 2rem;
-}
-
-.booking-form{
-    margin: 0 auto;
-    background-color: rgba(249, 182, 90, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-    width: 80%;
-    margin-bottom: 2rem;
-    
-}
-
-.divider{
-    height: 2rem;
-}
-
-.booking-form h2{
-    text-align: center;
-}
-
-.booking-form form{
+.nav__header{
+    padding: 1rem;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    color: var(--white);
+    letter-spacing: 0px;
+}
+
+.nav__menu__btn{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav__links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    
+    gap: 2rem;
+    background-color: var(--primary-color);
+    transition: transform .5s;
+    z-index: -1;
 }
 
-.booking-form input{
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.nav__links.open{
+    transform: translateY(100%); 
 }
 
-.booking-form button {
-    margin-top: 10px;
-    padding: 10px;
+.nav__links a {
+    font-weight: 500;
+    color: var(--white);
 }
 
-.booking-form button:hover{
-
+.nav__links a:hover {
+    color: var(--text-dark);
 }
 
-@media (min-width:760px) {
-    .carte-1{
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem;
-        text-align: left;
-        
-        
-    }
-
-    .margin-h1, .about{
-       
-        padding-top: 3rem;
-        text-align: left;
-        max-width: 1020px;
-        margin: auto;
-        
-    }
-
-    .carte-3 {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        text-align: left;
-    }
-
-    .carte-4 {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        
-    }
-
-    
-
-    header{
-        
-    }
-
-    .paragraph {
-        max-width: 55%;
-    }
-
-    .carte-2{
-        padding-top: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-        gap: 5rem;
-        text-align: right;
-    }
-
-    
+.nav__btn {
+    display: none;
 }
 
-
-
-
-@media (max-width:850px){
-    nav a {
-        width: 100%;
-        
-    }
-
-    nav ul{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin: auto;
-        padding: 1rem;
-        position: absolute;
-        transform: translateY(-100%);
-        transition: 0.5s ease;
-        background-color: #f4f4dc;
-        
-
-    }
-
-    nav ul.open{
-        
-        transform: translateY(0);
-        top: 90px;
-        
-    }
-
-    
-
-    button{
-        /* display: none; */
-    
-    }
-
-    .menu-hamburger{
-        display: block;
-        font-size: 25px;
-    }
-
-    .menu-hamburger:hover{
-        cursor: pointer;
-    }
-}
