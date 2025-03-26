@@ -258,9 +258,25 @@ nav{
     }
 
     .bouteille {
-        border: solid 2px red;
+        /* border: solid 2px red; */
         padding-top: 4rem;
         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carte__bouteille {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        /* border: solid 1px blue; */
+        max-width: 300px;
+    }
+
+    .carte__bouteille p {
+        line-height: .5rem;
     }
 
 }
