@@ -292,6 +292,7 @@ nav{
     justify-content: center;
     max-width: 600px;
     margin-inline: auto;
+    margin-bottom: 3rem;
 }
 
 .booking-form {
@@ -433,7 +434,7 @@ textarea {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5rem;
+        gap: 7rem;
         margin-top: 2rem;
         
     }
