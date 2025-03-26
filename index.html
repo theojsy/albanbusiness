@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
+
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -29,7 +30,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav__btn" >
-                <button class="btn">Réserver</button>
+                <a href="#book" class="btn">Réserver</a>
             </div>
         </nav>
         <div class="header__container" id="home">
@@ -100,7 +101,35 @@
     </section>
 
     <section class="section__container book__container" id="book">
-        <p>test</p>
+        <div class="divider"></div>
+        <div class="background__form">
+        <div class="booking-form">
+            <h2>Réserver ma Paella:</h2>
+            <form action="">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" id="nom" required>
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" name="prenom" id="prenom" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="code_postal">Code Postal:</label>
+                <input type="number" name="code_postal" id="code_postal" required>
+
+                <label for="date">Date de l'événement:</label>
+                <input type="text" name="date" id="date" required>
+
+                <label for="nb_personnes">Nombre de Personnes:</label>
+                <input type="number" name="nb_personnes" id="nb_personnes" required>
+
+                <label for="infos_complementaires">Informations Complémentaires</label>
+                <textarea name="infos_complementaires" id="infos_complementaires" rows="4" placeholder="Informations complémentaires sur votre réservation"></textarea>
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
 
     </section>
 

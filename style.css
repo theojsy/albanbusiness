@@ -2,7 +2,7 @@
 
 :root{
     --primary-color:rgb(233, 167, 44);
-    --primary-color-dark:rgb(192, 126, 4);
+    --primary-color-dark:rgb(208, 146, 30);
     --text-dark:#15191d;
     --text-light:#737373;
     --extra-light:#e5e5e5;
@@ -69,8 +69,8 @@
     outline: none;
     border: none;
     font-size: 1rem;
-    color: var(--white);
-    background-color: var(--text-dark);
+    color: var(--text-dark);
+    background-color: var(--primary-color);
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
@@ -78,7 +78,11 @@
 
 .btn:hover{
     color:var(--text-dark);
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
+}
+
+.btn-en-savoir-plus:hover{
+    background-color: var(--primary-color-dark);
 }
 
 img {
@@ -276,6 +280,57 @@ nav{
     line-height: 1.7rem;
 }
 
+.background__form {
+    background-image: url("images/istockphoto-1269367119-1024x1024.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.booking-form {
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    margin: 2rem 2rem;
+}
+
+.booking-form h2 {
+    text-align: center;
+}
+
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
+    padding: 10px;
+    resize: vertical;
+}
+
 @media (width > 768px) {
     nav{
         position: static;
@@ -329,6 +384,10 @@ nav{
     .nav__btn .btn{
         color: var(--text-dark);
         background-color: var(--primary-color);
+    }
+
+    .nav__btn .btn:hover{
+        background-color: var(--primary-color-dark);
     }
 
     .carte__1 {
