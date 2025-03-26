@@ -243,16 +243,17 @@ nav{
 
 .btn-en-savoir-plus{
     display: flex;
-    justify-content: center;
     margin-inline: auto;
-    font-size: 1.3rem;
-    color: var(--white);
+    font-size: 1rem;
+    color: var(--text-dark);
     background-color: var(--primary-color);
     width: fit-content;
     cursor: pointer;
-    padding: 0.7rem 1.2rem;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    transition: 0.3s;
+    outline: none;
+    border: none;
 
     
 }
@@ -343,7 +344,54 @@ nav{
     }
 
      .wide__screen {
-        max-width: 450px;
+        max-width: 460px;
+    }
+
+    .carte__2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* border:solid 2px blue; */
+    }
+
+    .wide__screen__2 {
+        max-width: 460px;
+        /* border: solid 2px red; */
+    }
+
+    .wide__screen__3 {
+        /* border:solid 2px green; */
+        max-width: 460px;
+    }
+
+    .carte__2 img {
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .wide__screen__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 2rem;
+        
+    }
+
+    .carte__3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 10rem;
+        padding-top:3rem;
+        padding-bottom: 3rem;
+    }
+
+    .carte__3 img {
+        max-width: 500px;
+        margin: 0;
     }
 
 }
