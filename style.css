@@ -330,4 +330,20 @@ nav{
         background-color: var(--primary-color);
     }
 
+    .carte__1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .carte__1 img {
+        max-width: 500px;
+        margin: 0;
+    }
+
+     .wide__screen {
+        max-width: 450px;
+    }
+
 }
