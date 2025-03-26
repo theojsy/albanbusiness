@@ -258,6 +258,7 @@ nav{
     transition: 0.3s;
     outline: none;
     border: none;
+    margin-bottom: 2rem;
 
     
 }
@@ -452,6 +453,10 @@ textarea {
     .carte__3 img {
         max-width: 500px;
         margin: 0;
+    }
+
+    .btn-en-savoir-plus{
+        margin-bottom: 0;
     }
 
 }
