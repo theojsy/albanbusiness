@@ -72,6 +72,15 @@ nav{
     
 }
 
+.section__h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    letter-spacing: -1px;
+    line-height: 4.25rem;
+}
+
 .nav__header{
     padding: 1rem;
     width: 100%;
@@ -194,6 +203,22 @@ nav{
     margin-bottom: 3rem;
 }
 
+.divider{
+    border: solid 1px black;
+    width: 50%;
+    max-width: 250px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+
+}
+
+.carte__2 h3{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
 
 
 
@@ -261,8 +286,12 @@ nav{
         /* border: solid 2px red; */
         padding-top: 4rem;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+    }
+
+    .carte__1 {
+        margin-top: 2rem;
     }
 
     .carte__bouteille {
@@ -277,6 +306,18 @@ nav{
 
     .carte__bouteille p {
         line-height: .5rem;
+    }
+
+    .nav__btn a {
+        padding: 1rem 1.5rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        color: var(--text-dark);
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
     }
 
 }
