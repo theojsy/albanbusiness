@@ -321,3 +321,31 @@ nav{
     }
 
 }
+
+
+@media ( width < 768px) {
+
+    .carte__bouteille {
+        display: flex;
+        max-width: 768px;
+        border: solid 2px red;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .text__bouteille{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .carte__bouteille img {
+        max-width: 170px;
+        margin: 0;
+    }
+
+    .carte__bouteille p {
+        line-height: 6px;
+    }
+}
