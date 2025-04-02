@@ -397,9 +397,8 @@ button:hover{
 }
 
 .footer1st {
-    display: flex;
-    margin-top: 5rem;
     padding-left: 12%;
+    margin-top: 5rem;
     padding-top: 3rem;
     height: 300px;
     background-color: var(--primary-color);
@@ -407,28 +406,28 @@ button:hover{
     gap: 8rem;
 }
 
+.footer__2{
+    padding-top: 1rem;
+}
+
 .droit {
     background-color: white;
     color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 1rem;
-    padding-left: 20%;
     font-weight: 600;
     font-size: 16px;
+    text-align: center;
 }
 
 .droit img {
     width:40px;
-    fill: white;
 }
 
 .svg-footer {
     display: flex;
+    padding-top: 1rem;
+    justify-content: center;
     gap: 1rem;
-    margin-left: auto;
-    padding-right: 20%;
 }
 
 
@@ -593,6 +592,41 @@ button:hover{
         width: 50%;
         max-width: 350px;
         text-align: left;
+    }
+
+    .footer1st {
+        display: flex;
+        margin-top: 5rem;
+        padding-left: 12%;
+        padding-top: 3rem;
+        height: 300px;
+        background-color: var(--primary-color);
+        width: 100%;
+        gap: 8rem;
+    }
+    
+    .droit {
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        padding-left: 12%;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .droit img {
+        width:40px;
+        fill: white;
+    }
+    
+    .svg-footer {
+        display: flex;
+        gap: 1rem;
+        margin-left: auto;
+        padding-right: 12%;
     }
 
 }
