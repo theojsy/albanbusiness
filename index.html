@@ -29,7 +29,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav__btn" >
-                <a href="#book" class="btn">Réserver</a>
+                <a href="#contact" class="btn">Réserver</a>
             </div>
         </nav>
         <div class="header__container" id="home">
@@ -76,9 +76,54 @@
 
     <div class="divider"></div>
 
-    <section id="contact">
+    <section id="contact" class="section__container">
+        <h1 class="section__header">Nous Contacter 📞</h1>
+        <p class="paratop">Vous souhaitez réserver une paella pour votre prochain événement ou avez des questions sur nos services à domicile ?</p>
+        
+        <div class="infobox">
+        <form action="https://formspree.io/f/xqapyewl" method="POST">
+            <h1>Votre Réservation:</h1>
+            <div class="nomprenom">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="text" name="prenom" placeholder="Prénom" required>
+        </div>
+        <div class="emailphone">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telephone" placeholder="Téléphone" pattern="[0-9]{10}" maxlength="10">
+        </div>
+            <textarea rows="5" cols="60" name="message" placeholder="Décrivez brièvement les informations de votre événement: date, lieu, nombre d'invités..."></textarea>
+            <button type="submit">Envoyer</button>
+        
+        </form>
+        <div class="infopoint">
+        <h1>Pour plus d'informations</h1>
+        <p>Appelez-nous ou remplissez ce formulaire pour réserver votre paella ou demander un devis personnalisé.</p>
+        <p><strong>Email:</strong> alban@wineandtrip.com </p>
+        <p><strong>Telephone:</strong> 06 09 85 72 72</p>
+        </div>
+    </div>
+</section>
 
-    </section>
+<section class="footer">
+    <div class="footer1st">
+    <div class="footer__1">
+    <h1>Mr Paella</h1>
+    <p>Réservation</p>
+    <p>Tel: 06 09 85 72 72</p>
+    <p>alban@wineandtrip.com</p> </div>
+    <div class="footer__2">
+        <h1>Wine & Trip</h1>
+        <p>Catalogue 2025</p>
+    </div>
+    </div>
+    <div class="droit">
+        <p>Mr Paella 2025 &trade; - Tous droits réservés</p>
+        <div class="svg-footer">
+            <img src="images/facebook-circle-fill.svg">
+            <img src="images/instagram-line.svg">
+        </div>
+    </div>
+</section>
 
     
 
