@@ -189,7 +189,7 @@ nav{
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .header__container p{
@@ -207,7 +207,7 @@ nav{
 .header__container img {
     max-width: 750px;
     margin-inline: auto;
-    filter: drop-shadow(5px 20px 20px rgba(0,0,0,0.5));
+    filter: drop-shadow(5px 10px 20px rgba(0,0,0,0.5));
     border-radius: 10px;
    
 }
