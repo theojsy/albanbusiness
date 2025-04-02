@@ -291,7 +291,7 @@ nav{
 
 form {
     margin-top: 2rem;
-    width:50%;
+    width:100%;
     background-color: #2d441420;
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -314,15 +314,7 @@ form input {
     
 }
 
-form .emailphone {
-    display: flex;
-    gap: 1rem
-}
 
-form .nomprenom {
-    display: flex;
-    gap: 1rem;
-}
 
 form textarea{
     width: 100%;
@@ -368,13 +360,18 @@ button:hover{
 }
 
 .infopoint{
-    width: 50%;
-    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-h1 {
+    font-size: 3rem;
+    text-align: center;
 }
 
 .infobox {
     margin-top: 2rem;
-    display: flex;
+    /* display: flex; */
     flex-direction: row-reverse;
     align-items: center;
     gap: 5rem;
@@ -396,6 +393,7 @@ button:hover{
 
 .paratop {
     margin-top: 1rem;
+    text-align: center;
 }
 
 .footer1st {
@@ -562,6 +560,39 @@ button:hover{
 
     .btn-en-savoir-plus{
         margin-bottom: 0;
+    }
+
+    form .emailphone {
+        display: flex;
+        gap: 1rem
+    }
+    
+    form .nomprenom {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .infobox {
+        display: flex;
+        margin-top: 2rem;
+        align-items: center;
+        gap: 5rem;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    form {
+        margin-top: 2rem;
+        width:50%;
+        background-color: #2d441420;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+
+    .infopoint{
+        width: 50%;
+        max-width: 350px;
+        text-align: left;
     }
 
 }
