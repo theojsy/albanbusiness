@@ -219,6 +219,108 @@ nav{
     padding-bottom: 1rem;
 }
 
+wine-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+   
+    
+}
+
+.carte h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wine-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wine-item:hover {
+    transform: translateY(-10px);
+}
+
+.wine-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.wine-info {
+    padding: 15px;
+    /* border: solid 2px red; */
+    width:300px;
+}
+
+.wine-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b2f1f;
+    margin-bottom: 10px;
+}
+
+.domaine-name {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.price-per-bottle,
+.price-for-6 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.wine-year {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.wine-item img {
+   max-width:250px;
+}
+
+.domaine-martin{
+    width: 100%;
+    background-color: rgba(234, 0, 255, 0.339);
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.domaine-buffiere{
+    width: 100%;
+    background-color: rgba(132, 227, 78, 0.49);
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+}
+
 
 
 
@@ -320,32 +422,13 @@ nav{
         cursor: pointer;
     }
 
-}
-
-
-@media ( width < 768px) {
-
-    .carte__bouteille {
+    .wine-gallery{
         display: flex;
-        max-width: 768px;
-        border: solid 2px red;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
+        justify-content: center;
+        padding: 2rem;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 
-    .text__bouteille{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .carte__bouteille img {
-        max-width: 170px;
-        margin: 0;
-    }
-
-    .carte__bouteille p {
-        line-height: 6px;
-    }
 }
