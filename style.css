@@ -394,6 +394,7 @@ button:hover{
 .paratop {
     margin-top: 1rem;
     text-align: center;
+    
 }
 
 .footer1st {
@@ -626,6 +627,10 @@ button:hover{
         gap: 1rem;
         margin-left: auto;
         padding-right: 12%;
+    }
+
+    .footer__2{
+        padding-top: 0;
     }
 
 }

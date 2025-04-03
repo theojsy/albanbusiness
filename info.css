@@ -219,18 +219,6 @@ nav{
     padding-bottom: 1rem;
 }
 
-wine-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    border: solid 2px red;
-    
-}
-
-
-
 .carte h1{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -250,6 +238,7 @@ wine-gallery {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .wine-item:hover {
@@ -267,7 +256,10 @@ wine-gallery {
     padding: 15px;
     /* border: solid 2px red; */
     width:300px;
+    
 }
+
+
 
 .wine-name {
     font-size: 1.8rem;
@@ -322,6 +314,40 @@ wine-gallery {
     margin-bottom: 2rem;
     margin-top: 2rem;
     
+}
+
+.footer1st {
+    padding-left: 12%;
+    margin-top: 5rem;
+    padding-top: 3rem;
+    height: 300px;
+    background-color: var(--primary-color);
+    width: 100%;
+    gap: 8rem;
+}
+
+.footer__2{
+    padding-top: 1rem;
+}
+
+.droit {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+.droit img {
+    width:40px;
+}
+
+.svg-footer {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
 
@@ -425,7 +451,7 @@ wine-gallery {
         cursor: pointer;
     }
 
-    .wine-gallery{
+    .wine-carte{
         display: flex;
         justify-content: center;
         padding: 2rem;
@@ -436,6 +462,47 @@ wine-gallery {
 
     .wine-item img {
         display: none;
+    }
+
+    .footer1st {
+        display: flex;
+        margin-top: 5rem;
+        padding-left: 12%;
+        padding-top: 3rem;
+        height: 300px;
+        background-color: var(--primary-color);
+        width: 100%;
+        gap: 8rem;
+    }
+    
+    .droit {
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 12%;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .droit img {
+        width:40px;
+        fill: white;
+       
+    }
+    
+    .svg-footer {
+        display: flex;
+        gap: 1rem;
+        margin-left: auto;
+        padding-right: 12%;
+    }
+
+    .footer__2{
+        padding-top: 0;
     }
 
 }
