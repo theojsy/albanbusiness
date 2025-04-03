@@ -383,6 +383,14 @@ button:hover{
     margin-bottom: 1rem;
 }
 
+.infopoint a , .footer__1 a {
+    color: #15191d;
+}
+
+.infopoint a:hover , .footer__1 a:hover {
+    border-bottom: 2px solid black;
+}
+
 .infopoint h1{
     margin-bottom: .3rem;
 }
@@ -409,6 +417,14 @@ button:hover{
 
 .footer__2{
     padding-top: 1rem;
+}
+
+.footer__2 a {
+    color: #15191d;
+}
+
+.footer__2 a:hover {
+    border-bottom: 2px solid black;
 }
 
 .droit {

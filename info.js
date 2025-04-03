@@ -33,3 +33,22 @@ ScrollReveal().reveal(".header__container img", {
     ...scrollRevealOption,
     delay: 1000,
 });
+
+
+// Add smooth scrolling to anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      let targetId = this.getAttribute('href').substring(1); // Get the target element's ID
+      let targetElement = document.getElementById(targetId);
+  
+      // Scroll smoothly to the target element
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+  
